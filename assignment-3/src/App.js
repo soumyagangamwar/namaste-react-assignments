@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createElement } from "react";
+import CHeader from "./CHeader";
 const heading = React.createElement("h1", { id: "title" }, "Namaste react!!");
 
 /**
@@ -49,9 +50,15 @@ const H1Component = () => <h1>Namaste React H1</h1>;
 const H2Component = () => <h2>Namaste React H2</h2>;
 const H3Component = () => <h3>Namaste React H3</h3>;
 
+/**
+ * 
+ * @returns composition of components
+ */
+
 const CompositionComponent = () => {
   return (
     <>
+      <CHeader/>
       <H1Component></H1Component>
       <H2Component />
       {H2Component()}
