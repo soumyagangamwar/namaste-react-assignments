@@ -6,7 +6,7 @@ const CHeader = ()=>{
     return (
         <div className='navbar'>
         <div className='image__container'>
-          <img src={image} />
+          <img src={image} alt="logo" />
         </div>
        
         <div className='search__bar'>

@@ -15,7 +15,7 @@ const heading = React.createElement("h1", { id: "title" }, "Namaste react!!");
  */
 const elementWithCreateReactElement = createElement(
   "div",
-  { className: "title" },
+  { className: "title!" },
   React.createElement("h1", {}, "Namaste React H1"),
   React.createElement("h2", {}, "Namaste React H2"),
   React.createElement("h3", {}, "Namaste React H3")
@@ -46,9 +46,9 @@ const ElementJSXWithFC = () => {
   );
 };
 
-const H1Component = () => <h1>Namaste React H1</h1>;
-const H2Component = () => <h2>Namaste React H2</h2>;
-const H3Component = () => <h3>Namaste React H3</h3>;
+const H1Component = () => <h1>Namaste React H1!</h1>;
+const H2Component = () => <h2>Namaste React H2!</h2>;
+const H3Component = () => <h3>Namaste React H3!</h3>;
 
 /**
  * 
