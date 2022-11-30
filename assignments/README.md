@@ -1,3 +1,12 @@
-# namaste-react-assignments
+**Build your Team App Assignment**
 
-![image](https://user-images.githubusercontent.com/16099491/204245694-8668984e-b2b8-44c1-9587-f9b24c2ae3d6.png)
+Header Should have team Name/logo
+
+Body should render cards
+
+each card should have detals of team member
+
+add css
+
+make your card dynamic data driven
+![Screenshot (9)](https://user-images.githubusercontent.com/16099491/204749883-60dd40f7-a840-454b-88f7-7bf7f9f20593.png)
