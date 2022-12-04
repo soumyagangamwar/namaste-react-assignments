@@ -4,14 +4,14 @@ import "./cards.css";
 
 const CardContainer = () => {
   return (
-    <>
+   
       <div className="card-container">
       {teamData.map((data) => ( 
         <CardComponent teamData={data} key={data.name} />
         ))};
         {/* <CardComponent /> */}
       </div>
-    </>
+    
   );
 };
 
