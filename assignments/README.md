@@ -1,12 +1,8 @@
 **Build your Team App Assignment**
 
-Header Should have team Name/logo
+ assignement5-searchfunctionality
 
-Body should render cards
 
-each card should have detals of team member
+https://user-images.githubusercontent.com/16099491/205504137-69b5e42e-a546-470d-a58d-15a9798fee6e.mp4
 
-add css
 
-make your card dynamic data driven
-![Screenshot (9)](https://user-images.githubusercontent.com/16099491/204749883-60dd40f7-a840-454b-88f7-7bf7f9f20593.png)
