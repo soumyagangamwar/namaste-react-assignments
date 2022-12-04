@@ -83,7 +83,7 @@
     "name": "Soumya Gangamwar",
     "designation": "SDE @LTI",
     "experience": "6 years",
-    "location": "Kukatpally",
+    "location": "Hyderabad",
     "instagram": "",
     "github": "",
     "linkedin": "",
@@ -128,5 +128,18 @@
     "linkedin": "",
     "discord": "",
     "captain": false
-  }
+  },
+  {
+    "id": 11,
+    "profilePic": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D10sR3gQHDY_yZfa_4v5RGNOf8FUt4HANt&w=280&h=250&fit=cover&q=100",
+    "name": "Runali Gangamwar",
+    "designation": "SDE @LTI",
+    "experience": "6 years",
+    "location": "Kukatpally",
+    "instagram": "",
+    "github": "",
+    "linkedin": "",
+    "discord": "",
+    "captain": false
+  },
 ]
