@@ -1,8 +1,8 @@
 import {useState} from 'react';
 
-import teamData from "../assets/json/teamMembers.json";
+import teamData from "../../assets/json/teamMembers.json";
 import CardComponent from "./Cards.js";
-import SearchComponent from "../shared/Search.js"
+import SearchComponent from "../../shared/Search.js"
 import "./cards.css";
 
 const CardContainer = () => {

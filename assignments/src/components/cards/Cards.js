@@ -1,5 +1,4 @@
 import './cards.css'
-import image from '../assets/images/team_logo.png'
 
 const CardComponent = ({teamData}) => {
     console.log(teamData,'teamData')
