@@ -1,6 +1,8 @@
+import "./shared.css";
+
 const Loader = ()=>{
     return (
-        <div>Loading............</div>
+        <div className="loadng">Loading............</div>
     )
 }
 

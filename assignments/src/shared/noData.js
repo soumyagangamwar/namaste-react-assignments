@@ -1,6 +1,8 @@
+import "./shared.css";
+
 const NoData = ()=> {
     return (
-        <div>
+        <div className="noData">
             <b>No Data...try again</b>
         </div>
     )
