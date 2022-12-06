@@ -1,14 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-import teamData from "../assets/json/teamMembers.json";
+//import teamData from "../assets/json/teamMembers.json";
 
-const SearchComponent = ({ setteamMembersdata }) => {
-  const [searchText, setSearchText] = useState("");
+const SearchComponent = ({ setfilteredTeamMembers , teamMembersdata, searchText, setSearchText}) => {
+  //const [searchText, setSearchText] = useState("");
 
   const getSearchTeamMembers = (searchText) => {
     console.log(searchText, "EEEE");
-    return teamData.filter((teamMem) =>
-      teamMem.name.toLowerCase().includes(searchText)
+    return teamMembersdata.filter((teamMem) =>
+      teamMem?.name?.toLowerCase().includes(searchText)
     );
   };
 
@@ -19,12 +19,13 @@ const SearchComponent = ({ setteamMembersdata }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if ((searchText === "")) {
-      setteamMembersdata(teamData);
+      setfilteredTeamMembers(teamMembersdata);
       return;
     }
     if (searchText.length >= 3) {
         const filteredTeamMems = getSearchTeamMembers(searchText);
-        setteamMembersdata(filteredTeamMems);
+        filteredTeamMems.length ? setfilteredTeamMembers(filteredTeamMems): setfilteredTeamMembers("")
+        ;
     }
     
   };

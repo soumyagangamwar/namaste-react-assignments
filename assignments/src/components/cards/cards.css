@@ -29,3 +29,14 @@
     margin: 1rem;
     padding: 1rem;
 }
+
+.card-img {
+  display: flex;
+  justify-content: center;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}

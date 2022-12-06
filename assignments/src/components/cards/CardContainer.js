@@ -1,21 +1,43 @@
-import {useState} from 'react';
-
-import teamData from "../../assets/json/teamMembers.json";
+import {useEffect, useState} from 'react';
 import CardComponent from "./Cards.js";
-import SearchComponent from "../../shared/Search.js"
+import NoData from "../../shared/noData.js"
+import SearchComponent from "../../shared/Search.js";
+import fetchservice from '../../services/fetch.service.js';
 import "./cards.css";
 
+const gitUserNames = fetchservice();
+
 const CardContainer = () => {
-  const [teamMembersdata, setteamMembersdata] = useState(teamData);
+  //console.log(gitUserNames, 'gitUserNames')
+  const [filteredTeamMembers, setfilteredTeamMembers] = useState([]);
+  const [teamMembersdata, setteamMembersdata] = useState([]);
+  const [searchText, setSearchText] = useState("");
+  
+  useEffect(()=> {
+    gitUserNames.then(res=> {
+      const data =[].concat(...res);
+     // console.log(res, '*****', data)
+      setteamMembersdata(data);
+      setfilteredTeamMembers(data)
+    })
+  }, [])
+   
   return (
    <>
-    <SearchComponent setteamMembersdata = {setteamMembersdata}/>
+    <SearchComponent setfilteredTeamMembers = {setfilteredTeamMembers}
+                     teamMembersdata = {teamMembersdata} 
+                     searchText = {searchText}
+                     setSearchText={setSearchText}/>
     <div className="card-container">
-     
-     {teamMembersdata.map((data) => ( 
-       <CardComponent teamData={data} key={data.name} />
-       ))};
-       {/* <CardComponent /> */}
+      {
+        filteredTeamMembers == ""  ? (
+         <NoData/>
+         ): (
+          filteredTeamMembers.map((data) => ( 
+            <CardComponent teamData={data} key={data.id} />
+            ))
+         )
+      }
      </div>
    </>
      
