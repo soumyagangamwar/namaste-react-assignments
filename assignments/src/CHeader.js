@@ -12,12 +12,12 @@ const CHeader = () => {
         <h2>Brainy Fools</h2>
       </div>
 
-      <div className="search__bar">
+      {/* <div className="search__bar">
         <div className="search__icon__container">
           <i className="fa-solid fa-magnifying-glass"></i>
         </div>
         <input type="text" placeholder="Search" />
-      </div>
+      </div> */}
       <i className="fa-solid fa-user-secret"></i>
     </div>
   );

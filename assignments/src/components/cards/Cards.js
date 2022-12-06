@@ -1,20 +1,21 @@
 import './cards.css'
-import image from '../assets/images/team_logo.png'
 
 const CardComponent = ({teamData}) => {
-    console.log(teamData,'teamData')
+   // console.log(teamData,'teamData!!')
+    const {avatar_url:img, name, company, followers} = teamData;
   return (
     <>
       <div className="card">
         <div className="card-img">
-        <img src={teamData.profilePic} alt={teamData.name} className="imgstyle" />
+        <img src={img} alt={name} className="imgstyle" />
         </div>
         
         <div className="card-details">
           <h3>
-            {teamData.name}
+            {name}
           </h3>
-          <h4>{teamData.designation}</h4>
+          <b>{company}</b>
+          <b>Followers: {followers}</b>
         </div>
       </div>
     </>

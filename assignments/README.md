@@ -1,12 +1,15 @@
 **Build your Team App Assignment**
 
-Header Should have team Name/logo
+ **assignement6**
 
-Body should render cards
+ In team app data should come from github API,Collect your teams github api and fetch the data in your app
+ 
+ 
 
-each card should have detals of team member
 
-add css
 
-make your card dynamic data driven
-![Screenshot (9)](https://user-images.githubusercontent.com/16099491/204749883-60dd40f7-a840-454b-88f7-7bf7f9f20593.png)
+
+
+
+https://user-images.githubusercontent.com/16099491/205856174-ea3cded8-09e1-4aa8-98fc-e059a93a7ed9.mp4
+
